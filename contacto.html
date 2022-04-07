@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__titulo"><a href="">Mi Página</a></h1>
+      <nav class="navegacion">
+        <ul>
+          <li><a class="navegacion__link" href="/index.html">Inicio</a></li>
+          <li><a class="navegacion__link" href="">Ayuda</a></li>
+          <li><a class="navegacion__link" href="/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Formulario de Contacto</h2>
+    <form action="" method="post">
+        <label for="nombre">Tu nombre (*):</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="apellidoP">Apellido paterno (*):</label>
+        <input type="text" name="apellidoP" id="apellidoP">
+
+        <label for="apellidoM">Apellido materno:</label>
+        <input type="text" name="apellidoM" id="apellidoM">
+
+        <label for="rfc">RFC:</label>
+        <input type="text" name="rfc" id="rfc">
+
+        <label for="cp">Codigo postal (*):</label>
+        <input type="text" name="cp" id="cp">
+        <a href="">¿Cómo conseguirlo?</a>
+
+        <label for="delegacion">Delegación / Municipio (*):</label>
+        <select name="delegacion" id="delegacion">
+          <option value="">Escoge una delegación/municipio</option>
+          <option value="">delegación/municipio 1</option>
+          <option value="">delegación/municipio 2</option>
+          <option value="">delegación/municipio 3</option>
+          <option value="">delegación/municipio 4</option>
+        </select>
+        
+        <label for="colonia">Colonia (*):</label>
+        <select name="colonia" id="colonia">
+          <option value="">Escoge una colonia</option>
+          <option value="">Colonia 1</option>
+          <option value="">Colonia 2</option>
+          <option value="">Colonia 3</option>
+          <option value="">Colonia 4</option>
+        </select>
+        Agregar Colonia <input type="checkbox">
+        
+        <label for="sexo">Sexo (*):</label>
+        <input type="radio" name="sexo" value="hombre"> Hombre
+        <input type="radio" name="sexo" value="mujer"> Mujer
+
+        <label for="fechaNacimiento">Fecha de nacimiento (*):</label>
+        <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+
+        <label for="email">Correo Electrónico (*):</label>
+        <input type="email" name="email" id="email">
+    </form>
+  </body>
+</html>
