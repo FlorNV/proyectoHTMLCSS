@@ -4,83 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/estilos.css" />
     <title>Mi Página</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__titulo"><a href="">Mi Página</a></h1>
+      <h1 class="header__titulo"><a href="">Mi Blog</a></h1>
       <nav class="navegacion">
         <ul>
-          <li><a class="navegacion__link" href="/index.html">Inicio</a></li>
-          <li><a class="navegacion__link" href="">Ayuda</a></li>
-          <li><a class="navegacion__link" href="/contacto.html">Contacto</a></li>
+          <li class="navegacion__link"><a href="/index.html">Inicio</a></li>
+          <li class="navegacion__link"><a href="">Ayuda</a></li>
+          <li class="navegacion__link">
+            <a href="/contacto.html">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <h2>Artículos</h2>
-    <section>
-      <article class="articulo">
-        <img
-          src="https://ichef.bbci.co.uk/news/640/cpsprodpb/05CC/production/_123948410_gettyimages-1239615971.jpg"
-          class="articulo__imagen"
-        />
-        <div class="articulo__contenido">
-          <h3 class="articulo__titulo">Artículo 1</h3>
-          <p class="articulo__texto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            voluptatem voluptas dolores laboriosam harum veritatis veniam vitae
-            ipsam mollitia dignissimos.
-          </p>
-          <p class="articulo__fecha">Domingo, 10 de abril 2022</p>
-          <address><a href="">Ir al artículo</a></address>
-        </div>
-      </article>
-      <article>
-        <img
-          src="https://resizer.glanacion.com/resizer/wF5czav7cVUdhS2bS9fULD1erfE=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/XFQZTQX4YZAKBDRR5ATWOG4APY.jpg"
-          class="articulo__imagen"
-        />
-        <div class="articulo__contenido">
-          <h3 class="articulo__titulo">Articulo 2</h3>
-          <p class="articulo__texto">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero nihil
-            numquam totam, reiciendis eaque quae veritatis minus in ab provident
-            tempora asperiores culpa laborum iste, eum nostrum aliquam facilis
-            accusamus.
-          </p>
-          <p class="articulo__fecha">Lunes, 11 de abril 2022</p>
-          <address><a href="">Ir al artículo</a></address>
-        </div>
-      </article>
-      <article>
-        <img
-          src="https://resizer.glanacion.com/resizer/R2mL7oBuOtRs6ikpDyGvZbC8PO4=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/5OXOE3INWRG2HMXPWCHDYGR2FM.jpg"
-          class="articulo__imagen"
-        />
-        <div class="articulo__contenido">
-          <h3 class="articulo__titulo">Articulo 3</h3>
-          <p class="articulo__texto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Exercitationem nihil, amet voluptatibus sint asperiores, explicabo
-            dolores similique unde autem molestiae aperiam, non animi laboriosam
-            temporibus.
-          </p>
-          <p class="articulo__fecha">Lunes, 11 de abril 2022</p>
-          <address><a href="">Ir al artículo</a></address>
-        </div>
-      </article>
-    </section>
-    <aside>
-      <h2>Contenido extra</h2>
-      <ul>
-        <li><a href="">Contenido 1</a></li>
-        <li><a href="">Contenido 2</a></li>
-        <li><a href="">Contenido 3</a></li>
-        <li><a href="">Contenido 4</a></li>
-      </ul>
-      <h2>Acerca de</h2>
-      <a href="">Ver mi perfil</a>
-    </aside>
+
+    <div class="contenedor">
+      <section class="contenido-principal">
+        <h2>Artículos</h2>
+        <article class="articulo">
+          <img
+            src="https://ichef.bbci.co.uk/news/640/cpsprodpb/05CC/production/_123948410_gettyimages-1239615971.jpg"
+            class="articulo__imagen"
+          />
+          <div class="articulo__contenido">
+            <h3 class="articulo__titulo">Artículo 1</h3>
+            <p class="articulo__texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              voluptatem voluptas dolores laboriosam harum veritatis veniam
+              vitae ipsam mollitia dignissimos.
+            </p>
+            <p class="articulo__fecha">Domingo, 10 de abril 2022</p>
+            <address><a href="">Ver artículo</a></address>
+          </div>
+        </article>
+        <article class="articulo">
+          <img
+            src="https://resizer.glanacion.com/resizer/wF5czav7cVUdhS2bS9fULD1erfE=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/XFQZTQX4YZAKBDRR5ATWOG4APY.jpg"
+            class="articulo__imagen"
+          />
+          <div class="articulo__contenido">
+            <h3 class="articulo__titulo">Artículo 2</h3>
+            <p class="articulo__texto">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+              nihil numquam totam, reiciendis eaque quae veritatis minus in ab
+              provident tempora asperiores culpa laborum iste, eum nostrum
+              aliquam facilis accusamus.
+            </p>
+            <p class="articulo__fecha">Lunes, 11 de abril 2022</p>
+            <address><a href="">Ver artículo</a></address>
+          </div>
+        </article>
+        <article class="articulo">
+          <img
+            src="https://resizer.glanacion.com/resizer/R2mL7oBuOtRs6ikpDyGvZbC8PO4=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/5OXOE3INWRG2HMXPWCHDYGR2FM.jpg"
+            class="articulo__imagen"
+          />
+          <div class="articulo__contenido">
+            <h3 class="articulo__titulo">Artículo 3</h3>
+            <p class="articulo__texto">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem nihil, amet voluptatibus sint asperiores, explicabo
+              dolores similique unde autem molestiae aperiam, non animi
+              laboriosam temporibus.
+            </p>
+            <p class="articulo__fecha">Lunes, 11 de abril 2022</p>
+            <address><a href="">Ver artículo</a></address>
+          </div>
+        </article>
+        <article class="articulo">
+          <img
+            src="https://fotos.perfil.com/2022/04/08/trim/950/534/accidente-de-tren-y-auto-en-merlo-pcia-de-buenos-aires-20220408-1338928.jpg"
+            class="articulo__imagen"
+          />
+          <div class="articulo__contenido">
+            <h3 class="articulo__titulo">Artículo 4</h3>
+            <p class="articulo__texto">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem nihil, amet voluptatibus sint asperiores, explicabo
+              dolores similique unde autem molestiae aperiam, non animi
+              laboriosam temporibus.
+            </p>
+            <p class="articulo__fecha">Lunes, 11 de abril 2022</p>
+            <address><a href="">Ver artículo</a></address>
+          </div>
+        </article>
+      </section>
+      <aside class="contenido-extra">
+        <h2 class="contenido-extra__titulo">Contenido extra</h2>
+        <ul>
+          <li class="contenido-extra__link"><a href="">Contenido 1</a></li>
+          <li class="contenido-extra__link"><a href="">Contenido 2</a></li>
+          <li class="contenido-extra__link"><a href="">Contenido 3</a></li>
+          <li class="contenido-extra__link"><a href="">Contenido 4</a></li>
+        </ul>
+        <h2>Acerca de</h2>
+        <a href="">Ver mi perfil</a>
+      </aside>
+    </div>
     <footer>
       <h4>&copy;2022 - Todos los derechos reservados</h4>
       <p>Seguinos en nuestras redes sociales</p>
