@@ -4,65 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/estilos.css" />
     <title>Contacto</title>
   </head>
-  <body>
+  <body class="gris">
     <header class="header">
-      <h1 class="header__titulo"><a href="">Mi Blog</a></h1>
+      <h1 class="header__titulo"><a href="index.html">Mi Blog</a></h1>
       <nav class="navegacion">
         <ul>
-          <li><a class="navegacion__link" href="/index.html">Inicio</a></li>
-          <li><a class="navegacion__link" href="">Ayuda</a></li>
-          <li><a class="navegacion__link" href="/contacto.html">Contacto</a></li>
+          <li class="navegacion__link"><a href="index.html">Inicio</a></li>
+          <li class="navegacion__link"><a href="">Servicios</a></li>
+          <li class="navegacion__link"><a href="">Ayuda</a></li>
+          <li class="navegacion__link"><a href="">Galería</a></li>
+          <li class="navegacion__link" style="background-color: rgba(0, 0, 0, 0.4)"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <h2>Formulario de Contacto</h2>
-    <form action="" method="post">
-        <label for="nombre">Tu nombre (*):</label>
-        <input type="text" name="nombre" id="nombre">
 
+    <form action="" method="post" class="contenedor-formulario">
+      <h2>Formulario de Contacto</h2>
+      <p>(*) Algunos campos son obligatorios</p>
+      <div class="fila">
+        <label for="nombre">Nombre (*):</label>
+        <input class="input-item" type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="fila">
         <label for="apellidoP">Apellido paterno (*):</label>
-        <input type="text" name="apellidoP" id="apellidoP">
+        <input class="input-item" type="text" name="apellidoP" id="apellidoP" placeholder="Tu apellido paterno" required>
+      </div>
 
+      <div class="fila">
         <label for="apellidoM">Apellido materno:</label>
-        <input type="text" name="apellidoM" id="apellidoM">
+        <input class="input-item" type="text" name="apellidoM" id="apellidoM" placeholder="Tu apellido materno">
+      </div>
 
+      <div class="fila">
         <label for="rfc">RFC:</label>
-        <input type="text" name="rfc" id="rfc">
+        <input class="input-item" type="text" name="rfc" id="rfc">
+      </div>
 
-        <label for="cp">Codigo postal (*):</label>
-        <input type="text" name="cp" id="cp">
+      <div class="fila">
+        <label for="cp">Código postal (*):</label>
+        <input class="input-item" type="text" name="cp" id="cp" required>
         <a href="">¿Cómo conseguirlo?</a>
+      </div>
 
+      <div class="fila">
+        <label for="estado">Estado(*):</label>
+        <select class="input-item" name="estado" id="estado" required>
+          <option value="">Seleccionar Estado</option>
+          <option value="">Estado 1</option>
+          <option value="">Estado 2</option>
+          <option value="">Estado 3</option>
+          <option value="">Estado 4</option>
+        </select>
+      </div>
+      
+      <div class="fila">
         <label for="delegacion">Delegación / Municipio (*):</label>
-        <select name="delegacion" id="delegacion">
-          <option value="">Escoge una delegación/municipio</option>
+        <select class="input-item" name="delegacion" id="delegacion" required>
+          <option value="">Seleccionar una delegación/municipio</option>
           <option value="">delegación/municipio 1</option>
           <option value="">delegación/municipio 2</option>
           <option value="">delegación/municipio 3</option>
           <option value="">delegación/municipio 4</option>
         </select>
-        
+      </div>
+      
+      <div class="fila">
         <label for="colonia">Colonia (*):</label>
-        <select name="colonia" id="colonia">
-          <option value="">Escoge una colonia</option>
+        <select class="input-item" name="colonia" id="colonia" required>
+          <option value="">Seleccionar una colonia</option>
           <option value="">Colonia 1</option>
           <option value="">Colonia 2</option>
           <option value="">Colonia 3</option>
           <option value="">Colonia 4</option>
         </select>
-        Agregar Colonia <input type="checkbox">
-        
+        Agregar Colonia <input type="checkbox" value="">
+      </div>
+      
+      <div class="fila">
         <label for="sexo">Sexo (*):</label>
-        <input type="radio" name="sexo" value="hombre"> Hombre
-        <input type="radio" name="sexo" value="mujer"> Mujer
+        <div class="input-item__radio">
+          <input type="radio" name="sexo" value="hombre" required> Hombre &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="sexo" value="mujer" required> Mujer
+        </div>
+      </div>
 
+      <div class="fila">
         <label for="fechaNacimiento">Fecha de nacimiento (*):</label>
-        <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+        <input class="input-item" type="date" name="fechaNacimiento" id="fechaNacimiento">
+      </div>
 
+      <div class="fila">
         <label for="email">Correo Electrónico (*):</label>
-        <input type="email" name="email" id="email">
+        <input class="input-item" type="email" name="email" id="email" placeholder="Tu correo electrónico">
+      </div>
+
+      <div class="fila">
+        <input type="submit" class="btn-enviar" value="Enviar">
+      </div>
     </form>
+    
+    <footer>
+      <hr />
+      <hr />
+      <div class="footer__contenido">
+        <div class="footer__titulo">
+          <a href="index.html">Mi Blog</a>
+        </div>
+        <div class="footer__redes-sociales">
+          <p>Seguinos en nuestras redes sociales</p>
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer__publicidad">
+          <p>Publicidad</p>
+          <ul>
+            <li><a href="">¿Cómo anunciarme?</a></li>
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Política de seguridad</a></li>
+            <li><a href="">Contáctese</a></li>
+            <li><a href="">Ayuda</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <h4>&copy;2022 - Todos los derechos reservados</h4>
+    </footer>
   </body>
 </html>
