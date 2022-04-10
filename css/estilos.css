@@ -2,7 +2,7 @@
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 ul {
@@ -15,28 +15,34 @@ a {
 
 /*Encabezado y Navegacion*/
 .header__titulo {
-    font-size: 1.6em;
-    padding: 6px;
+    font-size: 2em;
+    padding: 6px 16px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
+    height: 80px;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    background-color: #1985a1;
-    background-color: #f35b04;
+    background-color: #000;
+    background-color: #006ba6;
     z-index: 1;
+}
+
+.navegacion {
+    align-self: flex-end;
+    margin-right: 40px;
 }
 
 .navegacion__link {
     display: inline-block;
-    padding: 6px;
-    margin: 6px;
+    padding: 16px 28px;
+    border-radius: 10px 10px 0 0;
 }
 
 .header a {
@@ -47,24 +53,27 @@ a {
 .contenedor {
     display: flex;
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 6em 0 3em;
+    padding: 7em 0 3em;
 }
 
 /*Articulos*/
-section.contenido-principal {
+.contenido-principal {
     width: 70%;
-    /*background-color: #aaa;
     display: flex;
-    flex-flow: row wrap;*/
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
 }
 
 .articulo {
-    width: 90%;
+    /* width: 90%; */
+    width: 340px;
     margin: 28px 0;
-    /*box-shadow: 0px 2px 8px 0 #555;*/
+    margin: 0 9px 18px;
     position: relative;
+    flex-grow: 1;
 }
 
 .articulo__imagen {
@@ -78,11 +87,12 @@ section.contenido-principal {
     padding: 20px;
     position: absolute;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .articulo__titulo {
-    color: #f35b04;
+    color: #bde0fe;
+    letter-spacing: 2px;
 }
 
 .articulo__texto {
@@ -97,19 +107,128 @@ section.contenido-principal {
 
 .articulo__contenido a {
     display: block;
-    width: 90px;
+    width: 100px;
     padding: 6px;
     border-radius: 6px;
     margin-left: auto;
-    background-color: #f35b04;
+    background-color: #006ba6;
     color: #fff;
 }
 
 /*Aside*/
-.contenido-extra {
-    width: 30%;
+.mi-perfil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 20px;
+    margin: 12px 0;
 }
 
-.contenido-extra .contenido-extra__titulo {
-    margin: 0 0 25px;
-} 
+.mi-perfil__contenido {
+    color: #006ba6;
+    font-size: 18px;
+}
+
+.mi-perfil__imagen {
+    display: block;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.contenido-extra {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.contenido-extra h2 {
+    background-color: #006ba6;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 0 30px 30px 0;
+}
+
+.contenido-extra__item {
+    display: flex;
+    border-left: 6px solid #006ba6;
+    align-items: center;
+    margin: 14px 0;
+}
+
+.item__texto span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #006ba6;
+}
+
+.item__texto {
+    font-size: 14px;
+    padding: 8px;
+    color: #000;
+}
+
+.item__imagen img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.publicidad {
+    display: block;
+    width: 100%;
+}
+
+/*Footer*/
+hr {
+    margin: 6px;
+}
+
+footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer__contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 16px 0;
+}
+
+.footer__titulo{
+    align-self: center;
+}
+
+.footer__titulo a {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #006ba6;
+}
+
+.footer__contenido p {
+    font-weight: bold;
+    line-height: 2;
+}
+
+.footer__contenido ul a {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer__redes-sociales {
+    
+}
+
+.footer__publicidad {
+    
+}
+
+footer h4 {
+    text-align: center;
+    padding: 16px 0;
+}
