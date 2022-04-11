@@ -1,0 +1,130 @@
+.contenedor {
+    flex-direction: row;
+    box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.2);
+}
+
+.informacion-personal {
+    width: 340px;
+    background-color: rgba(0, 107, 166, .8);
+    color: #fff;
+}
+
+.informacion-personal__imagen {
+    width: 100%;
+    padding: 60px 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.informacion-personal__imagen img {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    display: block;
+    object-fit: cover;
+    border-radius: 100%;
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+.imagen__etiqueta {
+    text-align: center;
+}
+
+.imagen__etiqueta h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+.informacion-personal__contacto {
+    padding: 40px 16px;
+    font-size: 14px;
+}
+
+.informacion-personal__contacto p {
+    margin: 10px 0;
+}
+
+.informacion-personal__contacto span {
+    vertical-align: middle;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 6px;
+    margin-right: 6px;
+}
+
+.informacion-personal__contacto h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.informacion-perfil {
+    margin: 0 auto 30px;
+    width: 700px;
+}
+
+.informacion-perfil > h2 {
+    text-align: right;
+    margin: 30px 0;
+    font-size: 2em;
+}
+
+.perfil-descripcion {
+    margin-bottom: 20px;
+    background-color: #eee;
+    padding: 10px 20px 20px;
+}
+
+.perfil-detalles {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 10px 20px;
+}
+
+.educacion {
+    width: 400px;
+}
+
+.habilidades {
+    width: 200px;
+}
+
+.perfil-descripcion h3, .educacion > h3, .habilidades > h3 {
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.educacion h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.educacion h5 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+.educacion-formal__item, .educacion-complementaria__item {
+    margin: 14px 0;
+    font-size: 14px;
+}
+
+.educacion-complementaria h5 + p + p {
+    color: #666;
+}
+
+.educacion-complementaria__item p a {
+    font-size: 12px;
+    color: #006ba6;
+}
+
+.habilidades li {
+    margin-bottom: 6px;
+    color: #666;
+}

@@ -4,18 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="/css/perfil.css" />
     <title>Mi Perfil</title>
   </head>
   <body>
+    <!-- HEADER Y NAV -->
     <header class="header">
-      <h1 class="header__titulo"><a href="">Mi Blog</a></h1>
+      <h1 class="header__titulo"><a href="index.html">Mi Blog</a></h1>
       <nav class="navegacion">
         <ul>
-          <li><a class="navegacion__link" href="/index.html">Inicio</a></li>
-          <li><a class="navegacion__link" href="">Ayuda</a></li>
-          <li><a class="navegacion__link" href="/contacto.html">Contacto</a></li>
+          <li class="navegacion__link"><a href="index.html">Inicio</a></li>
+          <li class="navegacion__link"><a href="">Ayuda</a></li>
+          <li class="navegacion__link"><a href="galeria.html">Galería</a></li>
+          <li class="navegacion__link"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- PERFIL -->
+    <div class="contenedor">
+      <div class="informacion-personal">
+        <div class="informacion-personal__imagen">
+          <img src="img/SYAHr3s.jpg" alt="" />
+          <div class="imagen__etiqueta">
+            <h3>Florencia Noelí Valdez</h3>
+            <p>Full Stack Developer Jr</p>
+          </div>
+        </div>
+        <div class="informacion-personal__contacto">
+          <h3>Información personal</h3>
+          <p><span class="material-icons">cake</span>15/03/1998</p>
+          <p><span class="material-icons">call</span>+54 388 5148881</p>
+          <p><span class="material-icons">email</span>vfnoeli@gmail.com</p>
+          <p>
+            <span class="material-icons">location_on</span>San Salvador de
+            Jujuy, Jujuy, Argentina
+          </p>
+        </div>
+      </div>
+      <div class="informacion-perfil">
+        <h2>Florencia Noelí Valdez</h2>
+        <div class="perfil-descripcion">
+          <h3>Perfil</h3>
+          <p>
+            Soy estudiante de programación y me siento muy atraída por el
+            mundo IT. Me gusta mucho el trabajo en equipo
+            y compartir todos mis conocimientos. Me considero una persona
+            perfeccionista que se involucra al máximo en todo lo que hace.
+          </p>
+        </div>
+        <div class="perfil-detalles">
+          <div class="educacion">
+            <h3>Educación</h3>
+            <div class="educacion-formal">
+              <h4>Formal</h4>
+              <div class="educacion-formal__item">
+                <h5>Ingeniería Química</h5>
+                <p>Institución: Universidad Nacional de Jujuy</p>
+                <p>Período: 2017 - 2019</p>
+                <p>Estado: No finalizado</p>
+              </div>
+              <div class="educacion-formal__item">
+                <h5>Analista Programador Universitario</h5>
+                <p>Institución: Universidad Nacional de Jujuy</p>
+                <p>Período: 2020 - Actualmente</p>
+                <p>Estado: Cursando</p>
+              </div>
+            </div>
+            <div class="educacion-complementaria">
+              <h4>Complementaria</h4>
+              <div class="educacion-complementaria__item">
+                <h5>2021</h5>
+                <p>Curso de HTML</p>
+                <p>Udemy</p>
+                <p>
+                  <a href="https://www.udemy.com/course/html-basic-to-advanced/"
+                    >https://www.udemy.com/course/html-basic-to-advanced/</a
+                  >
+                </p>
+              </div>
+              <div class="educacion-complementaria__item">
+                <h5>2022</h5>
+                <p>Curso de FrontEnd</p>
+                <p>Udemy</p>
+                <p>
+                  <a
+                    href="https://www.udemy.com/course/universidad-desarrollo-web-moderno-html-css-javascript-html5-css3/"
+                    >https://www.udemy.com/course/universidad-desarrollo-web-moderno-html-css-javascript-html5-css3/</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="habilidades">
+            <h3>Habilidades</h3>
+            <ul>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>Bootstrap</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <hr />
+      <hr />
+      <div class="footer__contenido">
+        <div class="footer__titulo">
+          <a href="index.html">Mi Blog</a>
+        </div>
+        <div class="footer__redes-sociales">
+          <p>Seguinos en nuestras redes sociales</p>
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer__publicidad">
+          <p>Publicidad</p>
+          <ul>
+            <li><a href="">¿Cómo anunciarme?</a></li>
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Política de seguridad</a></li>
+            <li><a href="">Contáctese</a></li>
+            <li><a href="">Ayuda</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <h4>&copy;2022 - Todos los derechos reservados</h4>
+    </footer>
   </body>
 </html>
