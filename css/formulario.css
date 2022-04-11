@@ -1,0 +1,81 @@
+/*Forumlario*/
+.gris {
+    background-color: #f0f0f0;
+}
+
+.contenedor-formulario {
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    margin: 8em auto 4em;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 6px;
+}
+
+.contenedor-formulario h2 {
+    margin-bottom: 16px;
+}
+
+.contenedor-formulario p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #006ba6;
+}
+
+.fila label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.fila {
+    margin: 10px 0;
+}
+
+.fila a {
+    color: #006ba6;
+}
+
+.input-item, .input-item__radio {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+}
+
+.input-item {
+    border: 2px solid #d0d0d0;
+    border-radius: 4px;
+}
+
+.input-item::placeholder {
+    color: #aaa;
+}
+
+.input-item:hover {
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.input-item:focus {
+    outline: none;
+    border: 2px solid #006ba6;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #006ba6;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition-duration: .5s;
+}
+
+.btn-enviar:hover {
+    background-color: rgba(0, 107, 166, .8);
+    cursor: pointer;
+}

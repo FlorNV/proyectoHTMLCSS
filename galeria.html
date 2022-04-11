@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+    <title>Mi Página</title>
+  </head>
+  <body>
+    <!-- HEADER Y NAV -->
+    <header class="header">
+      <h1 class="header__titulo"><a href="index.html">Mi Blog</a></h1>
+      <nav class="navegacion">
+        <ul>
+          <li class="navegacion__link"><a href="index.html">Inicio</a></li>
+          <li class="navegacion__link"><a href="">Servicios</a></li>
+          <li class="navegacion__link"><a href="">Ayuda</a></li>
+          <li class="navegacion__link pagina-actual"><a href="galeria.html">Galería</a></li>
+          <li class="navegacion__link"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SLIDER -->
+    <div class="slider">
+      <div class="imagenes">
+        <input class="radio" type="radio" name="slide" id="img1">
+        <input class="radio" type="radio" name="slide" id="img2">
+        <input class="radio" type="radio" name="slide" id="img3">
+        <input class="radio" type="radio" name="slide" id="img4">
+        <input class="radio" type="radio" name="slide" id="img5">
+        <input class="radio" type="radio" name="slide" id="img6">
+
+        <img class="primero" src="img/foto1.jpg" alt="img1">
+        <img src="img/foto2.jpg" alt="img2">
+        <img src="img/foto3.jpg" alt="img3">
+        <img src="img/foto4.jpg" alt="img4">
+        <img src="img/foto5.jpg" alt="img5">
+        <img src="img/foto6.jpg" alt="img6">
+      </div>
+  
+      <div class="navegador">
+        <label for="img1" class="navegador__item"></label>
+        <label for="img2" class="navegador__item"></label>
+        <label for="img3" class="navegador__item"></label>
+        <label for="img4" class="navegador__item"></label>
+        <label for="img5" class="navegador__item"></label>
+        <label for="img6" class="navegador__item"></label>
+      </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer>
+      <hr />
+      <hr />
+      <div class="footer__contenido">
+        <div class="footer__titulo">
+          <a href="index.html">Mi Blog</a>
+        </div>
+        <div class="footer__redes-sociales">
+          <p>Seguinos en nuestras redes sociales</p>
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer__publicidad">
+          <p>Publicidad</p>
+          <ul>
+            <li><a href="">¿Cómo anunciarme?</a></li>
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Política de seguridad</a></li>
+            <li><a href="">Contáctese</a></li>
+            <li><a href="">Ayuda</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <h4>&copy;2022 - Todos los derechos reservados</h4>
+    </footer>
+  </body>
+</html>

@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="/css/formulario.css" />
     <title>Contacto</title>
   </head>
   <body class="gris">
@@ -21,8 +22,8 @@
           <li class="navegacion__link"><a href="index.html">Inicio</a></li>
           <li class="navegacion__link"><a href="">Servicios</a></li>
           <li class="navegacion__link"><a href="">Ayuda</a></li>
-          <li class="navegacion__link"><a href="">Galería</a></li>
-          <li class="navegacion__link" style="background-color: rgba(0, 0, 0, 0.4)"><a href="contacto.html">Contacto</a></li>
+          <li class="navegacion__link"><a href="galeria.html">Galería</a></li>
+          <li class="navegacion__link pagina-actual"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -59,7 +60,7 @@
       <div class="fila">
         <label for="estado">Estado(*):</label>
         <select class="input-item" name="estado" id="estado" required>
-          <option value="">Seleccionar Estado</option>
+          <option selected disabled>Seleccionar Estado</option>
           <option value="">Estado 1</option>
           <option value="">Estado 2</option>
           <option value="">Estado 3</option>
@@ -70,7 +71,7 @@
       <div class="fila">
         <label for="delegacion">Delegación / Municipio (*):</label>
         <select class="input-item" name="delegacion" id="delegacion" required>
-          <option value="">Seleccionar una delegación/municipio</option>
+          <option selected disabled>Seleccionar una delegación/municipio</option>
           <option value="">delegación/municipio 1</option>
           <option value="">delegación/municipio 2</option>
           <option value="">delegación/municipio 3</option>
@@ -81,7 +82,7 @@
       <div class="fila">
         <label for="colonia">Colonia (*):</label>
         <select class="input-item" name="colonia" id="colonia" required>
-          <option value="">Seleccionar una colonia</option>
+          <option selected disabled>Seleccionar una colonia</option>
           <option value="">Colonia 1</option>
           <option value="">Colonia 2</option>
           <option value="">Colonia 3</option>
